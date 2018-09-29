@@ -35,20 +35,7 @@
     <favorites_list name="performance" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret selection-end-column="13" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -631,7 +618,7 @@
       <workItem from="1538118334957" duration="4329000" />
       <workItem from="1538123558885" duration="2848000" />
       <workItem from="1538185294299" duration="831000" />
-      <workItem from="1538192122035" duration="2178000" />
+      <workItem from="1538192122035" duration="2777000" />
     </task>
     <task id="LOCAL-00001" summary="增加权限控制">
       <created>1538201771582</created>
@@ -676,7 +663,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68132000" />
+    <option name="totallyTimeSpent" value="68731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -688,7 +675,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-169" width="1936" height="1056" extended-state="6" />
+    <frame x="1358" y="-169" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
@@ -698,7 +685,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="5" weight="0.32980332" />
-      <window_info id="Structure" order="1" sideWeight="0.2884927" side_tool="true" visible="true" weight="0.20415778" />
+      <window_info id="Structure" order="1" sideWeight="0.28798842" side_tool="true" visible="true" weight="0.20415778" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30283225" />
@@ -711,8 +698,8 @@
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.26143792" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3267974" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3278867" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3278867" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7115073" visible="true" weight="0.20415778" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2472767" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7120116" visible="true" weight="0.20415778" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" sideWeight="0.5015625" side_tool="true" weight="0.1716418" />
@@ -1266,7 +1253,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
