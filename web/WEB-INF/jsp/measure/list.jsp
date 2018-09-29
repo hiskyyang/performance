@@ -19,13 +19,15 @@
     <title>指标管理</title>
 </head>
 <body>
+<jsp:include page="../head.jsp"/>
 <div class="panel">
     <div class="panel-title">指标管理</div>
     <input type="hidden" id="examId" name="examId" value="${measure.examId}"/>
     <div class="panel-searchForm">
         <br/>
-        <input type="button" value="添加"
-               onclick="window.open('measure/measure?examId=${measure.examId}', '_blank', 'height=160, width=500, top=10, left=10')"/>
+        <c:if test="${sessionScope.user.role==0}">
+            <input type="button" value="添加" onclick="window.open('measure/measure?examId=${measure.examId}', '_blank', 'height=160, width=500, top=10, left=10')"/>
+        </c:if>
         <br/>
     </div>
     <div class="panel-dataGrid">

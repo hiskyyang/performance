@@ -3,6 +3,7 @@ package com.code.controller;
 import com.basic.cache.service.CacheManager;
 import com.code.service.CodeService;
 import com.code.vo.Code;
+import com.user.vo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Collections;
 import java.util.List;
 
@@ -73,13 +75,17 @@ public class CodeController {
     }
 
     @RequestMapping("list")
-    public ModelAndView list(Code code) {
+    public ModelAndView list(HttpServletRequest request, Code code) {
 
         ModelAndView mav = new ModelAndView();
         List<String> types = service.types();
         mav.addObject("types", types);
 
         List<Code> list = service.list(code);
+        User sessionUser = (User) request.getSession().getAttribute("user");
+        if (!sessionUser.getRole().equals("0")) {
+            list = Collections.emptyList();
+        }
         mav.addObject("list", list);
 
         mav.addObject("code", code);

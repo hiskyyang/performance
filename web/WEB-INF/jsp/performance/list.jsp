@@ -16,12 +16,13 @@
     <script type="text/javascript" src="<%=basePath%>js/public.js"></script>
     <script type="text/javascript" src="<%=basePath%>js/performance/performance.js"></script>
     <link rel="stylesheet" type="text/css" href="<%=basePath%>css/public.css">
-    <title>指标管理</title>
+    <title>绩效管理</title>
 </head>
 <body>
+<jsp:include page="../head.jsp"/>
 <div class="panel">
     <div class="panel-title">
-        ${performances[0].team}组&nbsp;&nbsp;&nbsp;&nbsp;${performances[0].name}
+        绩效管理-->${performances[0].team}组-->${performances[0].name}
     </div>
     <div class="panel-searchForm">
         <c:forEach var="user" items="${users}">
@@ -53,7 +54,6 @@
                 <c:forEach var="performance" items="${performances}">
                     <c:set value="${performance.score * (performance.measureWeight/100) + sum }" var="sum"/>
                 </c:forEach>
-
                 <tr>
                     <td><B>最终得分</B></td>
                     <td></td>
@@ -71,24 +71,19 @@
             评分标准
             <table>
                 <tr>
-                    <td width="50%">优秀</td>
-                    <td width="50%">90-100</td>
+                    <td width="50%">优秀</td><td width="50%">90-100</td>
                 </tr>
                 <tr>
-                    <td width="30%">良好</td>
-                    <td width="30%">80-89</td>
+                    <td width="30%">良好</td><td width="30%">80-89</td>
                 </tr>
                 <tr>
-                    <td width="30%">一般</td>
-                    <td width="30%">70-79</td>
+                    <td width="30%">一般</td><td width="30%">70-79</td>
                 </tr>
                 <tr>
-                    <td width="30%">勉强</td>
-                    <td width="30%">60-69</td>
+                    <td width="30%">勉强</td><td width="30%">60-69</td>
                 </tr>
                 <tr>
-                    <td width="30%">不合格</td>
-                    <td width="30%">0-59</td>
+                    <td width="30%">不合格</td><td width="30%">0-59</td>
                 </tr>
             </table>
         </form>

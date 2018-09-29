@@ -18,7 +18,7 @@
 <body>
 <jsp:include page="../head.jsp"/>
 <div class="panel">
-    <div class="panel-title">用户管理</div>
+    <div class="panel-title">字典管理</div>
     <div class="panel-searchForm">
         <form id="myForm" method="get" action="code/list">
             <table>
@@ -49,10 +49,10 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type="submit" value="查询"/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="button" value="添加"
-                               onclick="window.open('code/code', '_blank', 'height=180, width=500, top=10, left=10')"/>
+                        <input type="submit" value="查询"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <c:if test="${sessionScope.user.role==0}">
+                            <input type="button" value="添加" onclick="window.open('code/code', '_blank', 'height=180, width=500, top=10, left=10')"/>
+                        </c:if>
                     </td>
                 </tr>
             </table>
@@ -75,10 +75,8 @@
                     <td class="panel-dataGrid-dataColumn">${c.value}</td>
                     <td class="panel-dataGrid-dataColumn">${c.sequence}</td>
                     <td class="panel-dataGrid-dataColumn">
-                        <a href="javascript:void(0)" onclick="deleteCode(${c.codeId})">删除</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="javascript:void(0)"
-                           onclick="window.open('code/code?codeId=${c.codeId}', '_blank', 'height=180, width=500, top=10, left=10')">更新</a>
+                        <a href="javascript:void(0)" onclick="deleteCode(${c.codeId})">删除</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="javascript:void(0)" onclick="window.open('code/code?codeId=${c.codeId}', '_blank', 'height=180, width=500, top=10, left=10')">更新</a>
                     </td>
                 </tr>
             </c:forEach>

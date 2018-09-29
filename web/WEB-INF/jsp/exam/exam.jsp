@@ -36,7 +36,7 @@
             });
         });
     </script>
-    <title>样品管理</title>
+    <title>考核管理</title>
 </head>
 <body>
     <div class="panel">
