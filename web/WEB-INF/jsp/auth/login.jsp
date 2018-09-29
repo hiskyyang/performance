@@ -26,7 +26,7 @@
 					</tr>
 					<tr>
 						<td>账号:</td>
-						<td><input id="name" name="name" value="ben"/></td>
+						<td><input id="name" name="name" value="hisky"/></td>
 					</tr>
 					<tr>
 						<td>密码:</td>

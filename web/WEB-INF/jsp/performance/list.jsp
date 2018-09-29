@@ -22,11 +22,11 @@
 <jsp:include page="../head.jsp"/>
 <div class="panel">
     <div class="panel-title">
-        绩效管理-->${performances[0].team}组-->${performances[0].name}
+        绩效管理-->${user.team}组-->${user.name}
     </div>
     <div class="panel-searchForm">
-        <c:forEach var="user" items="${users}">
-            <a href="performance/list?examId=${examId}&userId=${user.userId}">${user.name}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <c:forEach var="u" items="${users}">
+            <a href="performance/list?examId=${examId}&userId=${u.userId}">${u.name}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </c:forEach>
     </div>
     <div class="panel-searchForm">

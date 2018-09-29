@@ -96,6 +96,7 @@
                                 <a href="javascript:void(0)" onclick="deleteExam(${exam.examId})">删除</a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="javascript:void(0)" onclick="window.open('exam/exam?examId=${exam.examId}', '_blank', 'height=180, width=500, top=10, left=10')">更新</a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="measure/list?examId=${exam.examId}" target="_blank">指标管理</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="performance/report?examId=${exam.examId}" target="_blank">评分结果</a>&nbsp;&nbsp;&nbsp;&nbsp;
                             </c:if>
                             <a href="performance/list?examId=${exam.examId}" target="_blank">开始评分</a>
                         </td>

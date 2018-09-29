@@ -6,8 +6,8 @@
     <!-- 定义一条查询语句，在bean的implementation中会引用此语句的id http://wangh8080.blog.163.com/blog/static/1978482972012102804918201/ -->
     <insert id="add" parameterType="Performance">
         INSERT INTO
-        Performance(userId,name,level,team,examId,measureId,measureName,measureWeight,score,createdUserId,createdTime,modifiedTime)
-        VALUES(#{userId},#{name},#{level},#{team},#{examId},#{measureId},#{measureName},#{measureWeight},#{score},#{createdUserId},NOW(),NOW())
+        Performance(userId,examId,measureId,score,createdUserId,createdTime,modifiedTime)
+        VALUES(#{userId},#{examId},#{measureId},#{score},#{createdUserId},NOW(),NOW())
 
         <selectKey resultType="java.lang.Integer" keyProperty="performanceId"
                    order="AFTER">
@@ -17,10 +17,10 @@
 
     <insert id="adds">
         INSERT INTO
-        Performance(userId,name,level,team,examId,measureId,measureName,measureWeight,score,createdUserId,createdTime,modifiedTime)
+        Performance(userId,examId,measureId,score,createdUserId,createdTime,modifiedTime)
         VALUES
         <foreach collection="list" item="p" separator=",">
-            (#{p.userId},#{p.name},#{p.level},#{p.team},#{p.examId},#{p.measureId},#{p.measureName},#{p.measureWeight},#{p.score},#{p.createdUserId},NOW(),NOW())
+            (#{p.userId},#{p.examId},#{p.measureId},#{p.score},#{p.createdUserId},NOW(),NOW())
         </foreach>
     </insert>
 

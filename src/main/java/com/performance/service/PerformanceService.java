@@ -51,13 +51,8 @@ public class PerformanceService extends BaseService<Performance> {
             for (Measure measure : measures) {
                 Performance performance = new Performance();
                 performance.setUserId(user.getUserId());
-                performance.setName(user.getName());
-                performance.setLevel(levelMaps.get(user.getLevel()));
-                performance.setTeam(teamMaps.get(user.getTeam()));
                 performance.setExamId(examId);
                 performance.setMeasureId(measure.getMeasureId());
-                performance.setMeasureName(measure.getName());
-                performance.setMeasureWeight(measure.getWeight());
                 performance.setCreatedUserId(createdUseId);
                 performances.add(performance);
             }
