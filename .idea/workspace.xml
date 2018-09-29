@@ -7,15 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9375e8-2559-489f-b0c5-5a415cce43a6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/code/controller/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/code/controller/CodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/code/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/code/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/exam/exam.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/exam/exam.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/measure/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/measure/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/performance/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/performance/list.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="2a9375e8-2559-489f-b0c5-5a415cce43a6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +36,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/performance/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret selection-end-column="13" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -198,28 +193,12 @@
             <path>
               <item name="performance" type="b2602c69:ProjectViewProjectNode" />
               <item name="performance" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="performance" type="b2602c69:ProjectViewProjectNode" />
               <item name="performance" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="performance" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="performance" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="performance" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -652,8 +631,16 @@
       <workItem from="1538118334957" duration="4329000" />
       <workItem from="1538123558885" duration="2848000" />
       <workItem from="1538185294299" duration="831000" />
-      <workItem from="1538192122035" duration="1802000" />
+      <workItem from="1538192122035" duration="2178000" />
     </task>
+    <task id="LOCAL-00001" summary="增加权限控制">
+      <created>1538201771582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538201771582</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -689,7 +676,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67756000" />
+    <option name="totallyTimeSpent" value="68132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -702,7 +689,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-169" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
@@ -712,10 +698,10 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="5" weight="0.32980332" />
-      <window_info id="Structure" order="1" sideWeight="0.2875" side_tool="true" visible="true" weight="0.20415778" />
+      <window_info id="Structure" order="1" sideWeight="0.2884927" side_tool="true" visible="true" weight="0.20415778" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.30283225" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30283225" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.23311546" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -725,8 +711,8 @@
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.26143792" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3267974" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3278867" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3278867" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7125" visible="true" weight="0.20415778" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3278867" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7115073" visible="true" weight="0.20415778" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" sideWeight="0.5015625" side_tool="true" weight="0.1716418" />
@@ -777,8 +763,38 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加权限控制" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加权限控制" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,13 +828,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/measure/dao/MeasureDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="47" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/measure/service/MeasureService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1166,6 +1175,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-column="13" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
