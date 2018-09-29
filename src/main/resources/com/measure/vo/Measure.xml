@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="Measure">
+    <!-- 定义一条查询语句，在bean的implementation中会引用此语句的id http://wangh8080.blog.163.com/blog/static/1978482972012102804918201/ -->
+    <insert id="add" parameterType="Measure">
+        INSERT INTO
+        Measure(name,description,weight,examId,createdTime,modifiedTime)
+        VALUES(#{name},#{description},#{weight},#{examId},NOW(),NOW())
+
+        <selectKey resultType="java.lang.Integer" keyProperty="measureId"
+                   order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <delete id="delete" parameterType="int">
+    DELETE FROM Measure WHERE measureId=#{measureId}
+    </delete>
+
+    <update id="update" parameterType="User">
+    UPDATE Measure set
+        name=#{name},
+        <if test="description != null and description != ''">
+            description=#{description},
+        </if>
+        <if test="weight != null and weight != ''">
+            weight=#{weight},
+        </if>
+        <if test="examId != null and examId != ''">
+            examId=#{examId},
+        </if>
+        modifiedTime=NOW()
+    WHERE measureId=#{measureId}
+    </update>
+
+    <select id="get" parameterType="int" resultType="Measure">
+    SELECT * from Measure where measureId=#{measureId}
+    </select>
+
+    <select id="list" parameterType="Measure" resultType="Measure">
+        SELECT * from Measure where 1=1
+        <if test="name != null and name != ''">
+            and name=#{name}
+        </if>
+        <if test="examId != null">
+            and examId=#{examId}
+        </if>
+    </select>
+
+</mapper>

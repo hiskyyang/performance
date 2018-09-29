@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="Exam">
+    <!-- 定义一条查询语句，在bean的implementation中会引用此语句的id http://wangh8080.blog.163.com/blog/static/1978482972012102804918201/ -->
+    <insert id="add" parameterType="Exam">
+        INSERT INTO
+        Exam(name,startTime,endTime,status,createdTime,modifiedTime)
+        VALUES(#{name},#{startTime},#{endTime},#{status},NOW(),NOW())
+
+        <selectKey resultType="java.lang.Integer" keyProperty="examId"
+                   order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <delete id="delete" parameterType="int">
+    DELETE FROM Exam WHERE examId=#{examId}
+    </delete>
+
+    <update id="update" parameterType="User">
+    UPDATE Exam set
+        name=#{name},
+        <if test="startTime != null and startTime != ''">
+            startTime=#{startTime},
+        </if>
+        <if test="endTime != null and endTime != ''">
+            endTime=#{endTime},
+        </if>
+        <if test="status != null and status != ''">
+            status=#{status},
+        </if>
+        modifiedTime=NOW()
+    WHERE examId=#{examId}
+    </update>
+
+    <select id="get" parameterType="int" resultType="Exam">
+    SELECT * from Exam where examId=#{examId}
+    </select>
+
+    <select id="list" parameterType="Exam" resultType="Exam">
+        SELECT * from Exam where 1=1
+        <if test="name != null and name != ''">
+            and name=#{name}
+        </if>
+        <if test="startTime != null">
+            and startTime <![CDATA[ >= ]]> #{startTime}
+        </if>
+        <if test="endTime != null">
+            and endTime <![CDATA[ <= ]]> #{endTime}
+        </if>
+        <if test="status != null and status != ''">
+            and status=#{status}
+        </if>
+    </select>
+
+</mapper>
