@@ -65,7 +65,7 @@
                         <td colspan="2">
                             <input type="submit" value="查询"/>&nbsp;&nbsp;&nbsp;&nbsp;
                             <c:if test="${sessionScope.user.role==0}">
-                                <input type="button" value="添加" onclick="window.open('exam/exam', '_blank', 'height=180, width=500, top=10, left=10')"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="button" value="添加" onclick="window.open('exam/exam', '_blank', 'height=250, width=500, top=10, left=10')"/> &nbsp;&nbsp;&nbsp;&nbsp;
                             </c:if>
                         </td>
                     </tr>
@@ -94,7 +94,7 @@
                         <td class="panel-dataGrid-dataColumn">
                             <c:if test="${sessionScope.user.role==0}">
                                 <a href="javascript:void(0)" onclick="deleteExam(${exam.examId})">删除</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="javascript:void(0)" onclick="window.open('exam/exam?examId=${exam.examId}', '_blank', 'height=180, width=500, top=10, left=10')">更新</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="javascript:void(0)" onclick="window.open('exam/exam?examId=${exam.examId}', '_blank', 'height=250, width=500, top=10, left=10')">更新</a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="measure/list?examId=${exam.examId}" target="_blank">指标管理</a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="performance/report?examId=${exam.examId}" target="_blank">评分结果</a>&nbsp;&nbsp;&nbsp;&nbsp;
                             </c:if>

@@ -80,8 +80,8 @@ public class PerformanceController {
         User user = users.stream().collect(Collectors.toMap(User::getUserId, u -> u)).get(userId);
         if (null == user && users.size() > 0) {
             user = users.get(0);
-            user.setTeam(cacheManager.getCodeMap("team").get(user.getTeam()));
         }
+        user.setTeam(cacheManager.getCodeMap("team").get(user.getTeam()));
         return user;
     }
 

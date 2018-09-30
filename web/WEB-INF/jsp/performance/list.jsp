@@ -30,63 +30,52 @@
         </c:forEach>
     </div>
     <div class="panel-searchForm">
-        <form id="myForm" method="post" action="code/add">
-            <table>
-                <tr>
-                    <td width="30%">指标</td>
-                    <td width="30%">权重</td>
-                    <td width="40%">分数</td>
-                </tr>
-                <c:forEach var="performance" items="${performances}">
-                    <input type="hidden" id="performanceId" name="performanceId" value="${performance.performanceId}"/>
-                    <tr>
-                        <td>${performance.measureName}</td>
-                        <td>${performance.measureWeight}%</td>
-                        <td>
-                            <input name="score" id="score" value="${performance.score}"
-                                   onkeyup="this.value=this.value.replace(/\D/g,'')"
-                                   onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
-                        </td>
-                    </tr>
-                </c:forEach>
+        <table width="100%">
+            <tr>
+                <td width="50%">
+                    <form id="myForm" method="post" action="performance/adds">
+                        <table>
+                            <tr>
+                                <td width="30%">指标</td>
+                                <td width="30%">权重</td>
+                                <td width="40%">分数</td>
+                            </tr>
+                            <c:forEach var="performance" items="${performances}">
+                                <input type="hidden" id="performanceId" name="performanceId" value="${performance.performanceId}"/>
+                                <tr>
+                                    <td>${performance.measureName}</td>
+                                    <td>${performance.measureWeight}%</td>
+                                    <td>
+                                        <input name="score" id="score" value="${performance.score}"
+                                               onkeyup="this.value=this.value.replace(/\D/g,'')"
+                                               onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                                    </td>
+                                </tr>
+                            </c:forEach>
 
-                <c:set var="sum" value="0"/>
-                <c:forEach var="performance" items="${performances}">
-                    <c:set value="${performance.score * (performance.measureWeight/100) + sum }" var="sum"/>
-                </c:forEach>
-                <tr>
-                    <td><B>最终得分</B></td>
-                    <td></td>
-                    <td>
-                        <B>${sum}</B>
-                    </td>
-                </tr>
+                            <c:set var="sum" value="0"/>
+                            <c:forEach var="performance" items="${performances}">
+                                <c:set value="${performance.score * (performance.measureWeight/100) + sum }" var="sum"/>
+                            </c:forEach>
+                            <tr>
+                                <td><B>最终得分</B></td>
+                                <td></td>
+                                <td>
+                                    <B>${sum}</B>
+                                </td>
+                            </tr>
 
-                <tr>
-                    <td><input type="button" value="保存" onclick="save()"/></td>
-                </tr>
-            </table>
-
-            <br>
-            评分标准
-            <table>
-                <tr>
-                    <td width="50%">优秀</td><td width="50%">90-100</td>
-                </tr>
-                <tr>
-                    <td width="30%">良好</td><td width="30%">80-89</td>
-                </tr>
-                <tr>
-                    <td width="30%">一般</td><td width="30%">70-79</td>
-                </tr>
-                <tr>
-                    <td width="30%">勉强</td><td width="30%">60-69</td>
-                </tr>
-                <tr>
-                    <td width="30%">不合格</td><td width="30%">0-59</td>
-                </tr>
-            </table>
-        </form>
+                            <tr>
+                                <td><input type="button" value="保存" onclick="save()"/></td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+                <td width="50%" valign="top">
+                    <jsp:include page="reference.jsp"/>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 </body>

@@ -26,11 +26,11 @@
 					</tr>
 					<tr>
 						<td>账号:</td>
-						<td><input id="name" name="name" value="hisky"/></td>
+						<td><input id="name" name="name" value=""/></td>
 					</tr>
 					<tr>
 						<td>密码:</td>
-						<td><input id="password" name="password" type="password" value="123456"/></td>
+						<td><input id="password" name="password" type="password" value=""/></td>
 					</tr>
 					<tr>
 						<td colspan="2">
