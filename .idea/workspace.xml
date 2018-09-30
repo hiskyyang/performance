@@ -8,13 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a9375e8-2559-489f-b0c5-5a415cce43a6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/performance/reference.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/performance/controller/PerformanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/performance/controller/PerformanceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/auth/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/auth/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/exam/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/exam/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/performance/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/performance/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/performance/report.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/performance/report.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/user/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/user/user.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,11 +40,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/exam/list.jsp">
+      <file leaf-file-name="user.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/user/user.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="96" column="137" selection-start-line="96" selection-start-column="137" selection-end-line="96" selection-end-column="137" />
+            <state relative-caret-position="62">
+              <caret line="65" column="170" selection-start-line="65" selection-start-column="170" selection-end-line="65" selection-end-column="170" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/measure/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="70" column="31" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="70" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -123,7 +128,6 @@
         <option value="$PROJECT_DIR$/web/js/performance/performance.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/measure/measure.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/head.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/user/user.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/user/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/measure/controller/MeasureController.java" />
@@ -141,6 +145,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/performance/report.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/auth/login.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/exam/list.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/user/user.jsp" />
       </list>
     </option>
   </component>
@@ -177,10 +182,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1687" />
-    <option name="y" value="119" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -653,7 +658,7 @@
       <workItem from="1538123558885" duration="2848000" />
       <workItem from="1538185294299" duration="831000" />
       <workItem from="1538192122035" duration="12785000" />
-      <workItem from="1538269606709" duration="2424000" />
+      <workItem from="1538269606709" duration="5453000" />
     </task>
     <task id="LOCAL-00001" summary="增加权限控制">
       <created>1538201771582</created>
@@ -676,7 +681,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538213206339</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新结果查询样式">
+      <created>1538272094596</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538272094596</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -712,7 +724,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81163000" />
+    <option name="totallyTimeSpent" value="84192000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -724,13 +736,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-169" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32838285" />
-      <window_info anchor="right" id="Maven Projects" order="1" visible="true" weight="0.084754795" />
+      <window_info anchor="right" id="Maven Projects" order="1" visible="true" weight="0.120272316" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
@@ -738,7 +749,7 @@
       <window_info id="Structure" order="1" sideWeight="0.2873862" side_tool="true" weight="0.20415778" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27559912" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.49669966" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.23311546" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -749,10 +760,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3267974" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3278867" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2472767" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7112782" visible="true" weight="0.20628998" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7081967" visible="true" weight="0.2927383" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="5" sideWeight="0.2887218" side_tool="true" visible="true" weight="0.20628998" />
+      <window_info id="Favorites" order="5" sideWeight="0.29180327" side_tool="true" visible="true" weight="0.2927383" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="9" side_tool="true" weight="0.32995737" />
@@ -833,7 +844,8 @@
     <MESSAGE value="增加权限控制" />
     <MESSAGE value="修改数据库建表脚本" />
     <MESSAGE value="增加评分结果查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加评分结果查询" />
+    <MESSAGE value="更新结果查询样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新结果查询样式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1063,20 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/user/user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/measure/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/measure/measure.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1222,8 +1220,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/exam/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="96" column="137" selection-start-line="96" selection-start-column="137" selection-end-line="96" selection-end-column="137" />
+        <state relative-caret-position="183">
+          <caret line="67" column="118" selection-start-line="67" selection-start-column="118" selection-end-line="67" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/measure/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="70" column="31" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="70" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/user/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="65" column="170" selection-start-line="65" selection-start-column="170" selection-end-line="65" selection-end-column="170" />
         </state>
       </provider>
     </entry>

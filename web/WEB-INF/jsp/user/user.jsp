@@ -32,11 +32,10 @@
                             <input id="password" name="password" type="password" value="${user.password}"/>
                         </td>
                     </tr>
-                    <c:if test="${sessionScope.user.role==0}">
                         <tr>
                             <td>分组</td>
                             <td>
-                                <select id="team" name="team">
+                                <select id="team" name="team" ${sessionScope.user.role==0? "" : "disabled"}>
                                     <option value="">请选择</option>
                                     <c:forEach var="code" items="${teams}">
                                         <option value="${code.code}" ${user.team==code.code?"selected":""}>${code.value}</option>
@@ -47,7 +46,7 @@
                         <tr>
                             <td>级别</td>
                             <td>
-                                <select id="level" name="level">
+                                <select id="level" name="level"  ${sessionScope.user.role==0? "" : "disabled"}>
                                     <option value="">请选择</option>
                                     <c:forEach var="code" items="${levels}">
                                         <option value="${code.code}" ${user.level==code.code?"selected":""}>${code.value}</option>
@@ -57,17 +56,16 @@
                         </tr>
                         <tr>
                             <td>角色</td>
-                            <td><input type="radio" name="role" value="0" ${user.role == '0' ? "checked=checked" : ""} />管理员
-                                <input type="radio" name="role" value="1" ${user.role == null || user.role == '1' ? "checked=checked" : ""} />用户
+                            <td><input type="radio" name="role" value="0" ${user.role == '0' ? "checked=checked" : ""} ${sessionScope.user.role==0? "" : "disabled"}/>管理员
+                                <input type="radio" name="role" value="1" ${user.role == null || user.role == '1' ? "checked=checked" : ""} ${sessionScope.user.role==0? "" : "disabled"}/>用户
                             </td>
                         </tr>
                         <tr>
                             <td>是否初次登录</td>
-                            <td><input type="radio" name="firstLog" value="0" ${user.firstLog == null || user.firstLog == 0 ? "checked=checked" : ""} />是
-                                <input type="radio" name="firstLog" value="1" ${user.firstLog == 1 ? "checked=checked" : ""} />否
+                            <td><input type="radio" name="firstLog" value="0" ${user.firstLog == null || user.firstLog == 0 ? "checked=checked" : ""} ${sessionScope.user.role==0? "" : "disabled"}/>是
+                                <input type="radio" name="firstLog" value="1" ${user.firstLog == 1 ? "checked=checked" : ""} ${sessionScope.user.role==0? "" : "disabled"}/>否
                             </td>
                         </tr>
-                    </c:if>
                     <tr>
                         <td><input type="button" value="保存" onclick="save()"/></td>
                     </tr>
